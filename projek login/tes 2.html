@@ -1,0 +1,84 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampus Nasona</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            background-image: url("login\ 2.jpg"); /* Ganti dengan path gambar */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .sidebar {
+            width: 70px;
+            height: 100vh;
+            background: #333;
+            color: white;
+            padding: 20px;
+            position: fixed;
+        }
+        .sidebar h2 {
+            margin-bottom: 20px;
+        }
+        .sidebar ul {
+            list-style: none;
+        }
+        .sidebar ul li {
+            padding: 5px;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+        .sidebar ul li a:hover {
+            background: #444;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+            width: calc(100% - 270px);
+        }
+        .logout {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            font-size: 12px;
+            background-color: rgb(6, 6, 6);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .logout:hover {
+            background-color: rgb(43, 64, 181);
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Kampus Nasona</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Perkuliahan</a></li>
+            <li><a href="#">Pembayaran</a></li>
+            <li><a href="#">Laporan</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Selamat Datang di Kampus Nasona</h1>
+        <p>Ini adalah halaman utama Anda.</p>
+    </div>
+    <button class="logout">Logout</button>
+</body>
+</html>
